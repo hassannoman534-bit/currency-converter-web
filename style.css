@@ -1,4 +1,8 @@
-/* *{
+/* 
+
+This is my CSS without (AI)!!
+
+*{
     margin: 0;
     padding: 0;
 }
@@ -127,12 +131,12 @@ h1{
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f1f5f9; /* Soft Slate Off-White */
-    color: #1e293b;            /* Deep Slate Text */
+    background-color: #f1f5f9; 
+    color: #1e293b;            
     min-height: 100vh;
 }
 
-/* --- NAVIGATION --- */
+
 nav {
     background-color: #ffffff;
     padding: 18px 0;
@@ -155,10 +159,9 @@ nav ul a {
 }
 
 nav ul a:hover {
-    color: #059669; /* Emerald accent on hover */
+    color: #059669; 
 }
 
-/* --- HEADING --- */
 h1 {
     text-align: center;
     margin-top: 40px;
@@ -168,13 +171,13 @@ h1 {
     color: #0f172a;
 }
 
-/* --- MAIN CONVERTER CARD --- */
+
 .box {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 380px;            /* Swapped 50vh to 380px so it stays proportional */
+    width: 380px;           
     max-width: 90%;
     padding: 30px;
     background-color: #ffffff;
@@ -185,7 +188,7 @@ h1 {
     gap: 16px;
 }
 
-/* --- FORM INPUTS & SELECTS --- */
+
 #amount, #fromCurr, #toCurr {
     font-family: inherit;
     font-size: 15px;
@@ -204,7 +207,7 @@ h1 {
     box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.15);
 }
 
-/* --- CONVERT BUTTON --- */
+
 #cnbtn {
     margin-top: 10px;
     width: 100%;
@@ -212,7 +215,7 @@ h1 {
     font-size: 16px;
     font-weight: 600;
     padding: 12px;
-    background-color: #059669; /* Emerald Green */
+    background-color: #059669; 
     color: #ffffff;
     border: none;
     border-radius: 8px;
@@ -227,12 +230,12 @@ h1 {
     transform: translateY(-1px);
 }
 
-/* --- OUTPUT BOX --- */
+
 .output {
     visibility: hidden;
     margin: 20px auto 0;
     text-align: center;
-    background-color: #e6f4ea; /* Light Green Tint */
+    background-color: #e6f4ea;
     color: #047857;
     padding: 15px;
     width: 380px;
@@ -249,11 +252,6 @@ h1 {
 }
 
 
-
-
-
-
-/* --- ABOUT PAGE STYLES --- */
 .about-container {
     display: flex;
     justify-content: center;
@@ -298,13 +296,13 @@ h1 {
     margin-bottom: 15px;
 }
 
-/* --- LINKEDIN BUTTON --- */
+
 .linkedin-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    background-color: #0a66c2; /* Official LinkedIn Blue */
+    background-color: #0a66c2; 
     color: #ffffff;
     text-decoration: none;
     padding: 12px 24px;
