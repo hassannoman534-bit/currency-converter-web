@@ -1,0 +1,330 @@
+/* *{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: antiquewhite;
+    padding: 25px;
+    box-shadow: 10px 10px 15px gray;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li{
+    display: inline-block;
+    font-size: 20px;
+}
+nav ul a{
+    text-decoration: none;
+    color: black;
+    transition: all;
+    transition-duration: 500ms;
+}
+nav ul a:hover{
+    text-decoration: none;
+    color: rgb(19, 0, 130);
+}
+
+
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:50vh;
+    height: 50vh;
+    background-color: antiquewhite;
+    border: 1px solid black;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    gap: 15px;
+}
+
+
+h1{
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.box , #fromCurr{
+    font-size: 16px;
+    color: black;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.box , #toCurr{
+    font-size: 16px;
+    color: black;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+#cnbtn{
+    margin-top: 5px;
+    font-size: 15px;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    transition: all;
+    transition-duration: 500ms;
+}
+
+#cnbtn:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.output{
+    visibility: hidden;
+    margin-top:15px;
+    text-align: center;
+    background-color: antiquewhite;
+    height: 10vh;
+    width: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+#amount{
+    background-color: antiquewhite;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    width: 130px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 15px;
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f1f5f9; /* Soft Slate Off-White */
+    color: #1e293b;            /* Deep Slate Text */
+    min-height: 100vh;
+}
+
+/* --- NAVIGATION --- */
+nav {
+    background-color: #ffffff;
+    padding: 18px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #475569;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul a:hover {
+    color: #059669; /* Emerald accent on hover */
+}
+
+/* --- HEADING --- */
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+/* --- MAIN CONVERTER CARD --- */
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 380px;            /* Swapped 50vh to 380px so it stays proportional */
+    max-width: 90%;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    margin: 0 auto;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
+    gap: 16px;
+}
+
+/* --- FORM INPUTS & SELECTS --- */
+#amount, #fromCurr, #toCurr {
+    font-family: inherit;
+    font-size: 15px;
+    color: #1e293b;
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 10px 14px;
+    width: 100%;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+#amount:focus, #fromCurr:focus, #toCurr:focus {
+    border-color: #059669;
+    box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.15);
+}
+
+/* --- CONVERT BUTTON --- */
+#cnbtn {
+    margin-top: 10px;
+    width: 100%;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px;
+    background-color: #059669; /* Emerald Green */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(5, 150, 105, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#cnbtn:hover {
+    background-color: #047857;
+    box-shadow: 0 6px 12px -2px rgba(5, 150, 105, 0.3);
+    transform: translateY(-1px);
+}
+
+/* --- OUTPUT BOX --- */
+.output {
+    visibility: hidden;
+    margin: 20px auto 0;
+    text-align: center;
+    background-color: #e6f4ea; /* Light Green Tint */
+    color: #047857;
+    padding: 15px;
+    width: 380px;
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid #a7f3d0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+/* --- ABOUT PAGE STYLES --- */
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 120px);
+    padding: 20px;
+}
+
+.about-card {
+    background-color: #ffffff;
+    width: 420px;
+    max-width: 100%;
+    padding: 35px 30px;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.about-card h1 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.project-info {
+    color: #475569;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.divider {
+    height: 1px;
+    background-color: #e2e8f0;
+    margin: 25px 0;
+}
+
+.profile-section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 15px;
+}
+
+/* --- LINKEDIN BUTTON --- */
+.linkedin-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #0a66c2; /* Official LinkedIn Blue */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(10, 102, 194, 0.2);
+}
+
+.linkedin-btn:hover {
+    background-color: #004182;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px -2px rgba(10, 102, 194, 0.3);
+}
+
+.linkedin-btn i {
+    font-size: 20px;
+}
+
+@view-transition {
+    navigation: auto;
+}
