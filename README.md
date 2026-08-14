@@ -4,6 +4,8 @@ A simple web-based currency converter built with HTML, CSS, and JavaScript. The 
 
 ## Overview
 
+preview : https://currency-converter-web-ten.vercel.app/
+
 This project was built to practice working with JavaScript, DOM manipulation, user input, and external APIs.
 
 The currency list is fetched from the Currency API and used to populate both currency dropdowns dynamically. When the user clicks the Convert button, the application fetches the exchange rates for the selected source currency and uses the selected target currency to retrieve the required exchange rate.
